@@ -1,0 +1,32 @@
+#markdown {
+    display: none;
+}
+#文章 {box-shadow: rgba(0, 0, 0, 0.24) 0px 12px 15px 0px, rgba(0, 0, 0, 0.19) 0px 17px 50px 0px;background-color: var(--theme-color5);max-width: 512px;width: 100%;border: 1px solid transparent;border-radius: 8px;padding: 24px;}
+
+blockquote {border-left: 8px solid var(--theme-color4);background-color: var(--theme-color3);border-radius: 4px;margin-left: 0;padding-left: 8px;}
+blockquote > p{
+    padding: 4px;
+}
+
+pre {border-radius: 4px;background-color: var(--theme-color3);padding: 9px;}
+p > code {border-radius: 4px;background-color: var(--theme-color3);padding: 4px;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
+tbody{
+    text-align:center;
+}
+thead{
+    border-bottom: 1px solid rgb(100,100,100);
+}
+tbody td{
+    border-top: 1px solid white;
+}
+th,td{
+    height: 36px;
+    }
