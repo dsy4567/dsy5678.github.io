@@ -105,7 +105,7 @@
     border-radius: 50%;
 }
 
-#回到顶部 {
+#回到顶部按钮 {
     transform: translateX(64px);
     display: flex;
     border: none;
@@ -124,16 +124,17 @@
     cursor: pointer;
 }
 
-#回到顶部:active {
+#回到顶部按钮:active {
     filter: brightness(0.8);
 }
 
-#回到顶部:focus,
-#回到顶部:hover {
+#回到顶部按钮:focus,
+#回到顶部按钮:hover {
     opacity: 1;
 }
 
 #logo {
+    border-radius: 50%;
     width: 32px;
     height: 32px;
 }
@@ -170,7 +171,6 @@
     margin-right: 4px;
 }
 
-
 #页脚 {
     display: flex;
     background-color: rgb(36, 36, 36);
@@ -206,10 +206,10 @@
     border-radius: 8px;
 }
 
-.主要部分 {
+#主要部分 {
     display: block;
 }
-.临时主要部分 {
+#临时主要部分 {
     display: none;
 }
 
@@ -229,8 +229,7 @@
     width: 94.6px;
 }
 
-#主要部分{
+#主要部分 {
     display: flex;
     justify-content: center;
 }
-

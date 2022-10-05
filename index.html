@@ -2,46 +2,115 @@
 <html lang="zh-CN">
     <head>
         <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"
-        />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="description" content="dsy4567 的小站" />
-        <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon" />
-        <title>我的第一个网页</title>
-        <!-- <title t="dsy4567 的小站">...</title> -->
-        <!-- <script src="/js/index.js"></script> -->
-        <!-- <link rel="stylesheet" href="/css/global.css" />
-        <link rel="stylesheet" href="/css/index.css" /> -->
-        <script>
-            var urls = [
-                {
-                    fcm: "aHR0cHM6Ly9ncmVhc3lmb3JrLm9yZy96aC1DTi9zY3JpcHRzLzQzNzIzMy0lRTklOTglQjIlRTYlQjIlODklRTglQkYlQjclRTUlODclOEYlRTclODIlQjklRTYlOTYlOTk=",
-                },
-                {
-                    fcm_gayhub:
-                        "aHR0cHM6Ly9naXRodWIuY29tL2RzeTQ1NjcvRnVja2luZy1BbnRpLUluZHVsZ2VuY2U=",
-                },
-                {
-                    fcm_gitee:
-                        "aHR0cHM6Ly9naXRlZS5jb20vZHN5NDU2Ny9GdWNraW5nLUFudGktSW5kdWxnZW5jZQ==",
-                },
-                { gayhub: "aHR0cHM6Ly9naXRodWIuY29tL2RzeTQ1Njc=" },
-            ];
-            var go = location.href.substring(
-                location.href.indexOf("?") + 1,
-                location.href.length
-            );
-            urls.forEach((element) => {
-                if (element[go]) {
-                    location.href = atob(element[go]);
-                }
-            });
-        </script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/img/logo.jfif" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/blog.css" />
+        <link rel="stylesheet" href="/css/global.css" />
+        <link rel="stylesheet" href="/css/index.css" />
+        <title>dsy4567 的小站</title>
     </head>
     <body>
-        <h1>这是我的第一个网页</h1>
-        <p>你好, 世界!</p>
+        <div
+            onload="if( !进度条第一次动 ) { 进度条第一次动=true;设置进度条进度(0); }"
+            id="进度条"
+        ></div>
+        <div id="加载界面">
+            <div class="加载圆圈"></div>
+        </div>
+        <button title="回到顶部" id="回到顶部按钮" onclick="回到顶部();">
+            <svg
+                width="24"
+                height="24"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M24.0083 14.1006V42.0001"
+                    stroke="#333"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M12 26L24 14L36 26"
+                    stroke="#333"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M12 6H36"
+                    stroke="#333"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </button>
+
+        <div id="导航栏">
+            <div class="左">
+                <a href="/">
+                    <img
+                        src="/img/logo.jfif"
+                        id="logo"
+                        alt="logo"
+                        title="logo"
+                    />
+                </a>
+                <a href="/"><h1>dsy4567 的小站</h1></a>
+            </div>
+            <div class="右">
+                <a href="/blog.html">博客</a>
+                <a href="https://fcmsb250.github.io/">防沉迷终结者</a>
+            </div>
+        </div>
+
+        <div id="主要部分">
+            <!-- START MAIN -->
+            <article id="文章">hhh</article>
+            <!-- END MAIN -->
+        </div>
+        <div id="临时主要部分"></div>
+
+        <div id="页脚">
+            <div>
+                Copyright (C) 2022 dsy4567 (
+                <a target="_blank" href="https://github.com/dsy4567">GitHub</a>
+                |
+                <a target="_self" href="mailto:dsy4567@outlook.com">邮箱</a> )
+                <br />
+                <a href="https://github.com/fcmsb250/fcmsb250.github.io"
+                    >该网站</a
+                >
+                和
+                <a href="https://github.com/dsy4567/Anti-addiction-terminator/"
+                    >防沉迷终结者</a
+                >
+                的源代码均在
+                <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0</a>
+                下获得许可<br />
+            </div>
+            <div>
+                <img
+                    data-src="https://visitor-badge.glitch.me/badge?page_id=ghp_dsy5678_github_io&left_color=green&right_color=red"
+                    alt="visitor-badge"
+                    title="visitor-badge"
+                    id="visitor-badge"
+                />
+            </div>
+        </div>
+
+        <noscript>
+            <style>
+                #加载界面 {
+                    display: none !important;
+                }
+            </style>
+        </noscript>
+        <script src="/lib/jquery-3.6.1.min.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>

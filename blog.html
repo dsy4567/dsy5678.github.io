@@ -4,13 +4,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/img/logo.jfif" type="image/x-icon" />
         <link rel="stylesheet" href="/css/blog.css" />
         <link rel="stylesheet" href="/css/global.css" />
         <link rel="stylesheet" href="/css/index.css" />
-        <title t="博客的 html 模板">...</title>
-        <script src="/lib/marked.min.js"></script>
-        <script src="/js/index.js"></script>
-        <script src="/js/blog.js"></script>
+        <title>dsy4567 的小站 - 博客</title>
     </head>
     <body>
         <div
@@ -20,7 +18,7 @@
         <div id="加载界面">
             <div class="加载圆圈"></div>
         </div>
-        <button title="回到顶部" id="回到顶部" onclick="回到顶部();">
+        <button title="回到顶部" id="回到顶部按钮" onclick="回到顶部();">
             <svg
                 width="24"
                 height="24"
@@ -54,65 +52,28 @@
 
         <div id="导航栏">
             <div class="左">
-                <a href="/i.html">
+                <a href="/">
                     <img
-                        src="/img/logo.svg"
+                        src="/img/logo.jfif"
                         id="logo"
                         alt="logo"
                         title="logo"
                     />
                 </a>
-                <a href="/i.html"><h1>dsy4567 的小站</h1></a>
+                <a href="/"><h1>dsy4567 的小站</h1></a>
             </div>
             <div class="右">
-
-                <a href="https://fcmsb250.github.io/"
-                    >防沉迷终结者</a
-                >
+                <a href="/blog.html">博客</a>
+                <a href="https://fcmsb250.github.io/">防沉迷终结者</a>
             </div>
         </div>
 
-        <pre id="markdown">
-<!-- START MAIN -->
-<!-- 在这里写 markdown -->
-# 我的第一个博客
-
-你好世界
-
-> 1+1=3
-
-`"g" * 3 = "ggg"`
-
-代码片段
-
-```
-print("你好世界")
-print("你好世界")
-```
-
-列表
-
--   aaa
-    -   bbb
-        -   ccc
-        3. h
-
-1. ggg
-2. hhh
-
-\\\<\\\small\\\>small\\\<\\\/small\\\>
-
-|  表头   | 表头  |
-|  ----  | ----  |
-| 单元格  | 单元格 |
-| 单元格  | 单元格 |
-
-<!-- END MAIN -->
-</pre>
         <div id="主要部分">
+            <!-- START MAIN -->
             <article id="文章"></article>
+            <!-- END MAIN -->
         </div>
-        <div class="临时主要部分"></div>
+        <div id="临时主要部分"></div>
 
         <div id="页脚">
             <div>
@@ -134,7 +95,7 @@ print("你好世界")
             </div>
             <div>
                 <img
-                    data-src="https://visitor-badge.glitch.me/badge?page_id=ghp_fcmsb250_github_io&left_color=green&right_color=red"
+                    data-src="https://visitor-badge.glitch.me/badge?page_id=ghp_dsy5678_github_io&left_color=green&right_color=red"
                     alt="visitor-badge"
                     title="visitor-badge"
                     id="visitor-badge"
@@ -149,5 +110,7 @@ print("你好世界")
                 }
             </style>
         </noscript>
+        <script src="/lib/jquery-3.6.1.min.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>

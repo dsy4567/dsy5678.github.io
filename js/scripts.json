@@ -1,0 +1,9 @@
+{
+    "index": [
+        "/js/index.js"
+    ],
+    "blog": [
+        "/lib/marked.min.js",
+        "/js/blog.js"
+    ]
+}
